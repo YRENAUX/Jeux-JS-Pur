@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper par Yoni'</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper"</h1>
+    </header>
+    <div class="container">
+        <div class="score-container">
+            <span class="user">Toi</span>
+            <span id="score"></span>
+            <span class="com">COM</span>
+        </div>
+        <div class="buttons">
+            <button class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+            <button class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+            <button class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+        </div>
+        <div class="challenge">
+            <div id="you">
+                <div id="YourObject"><i class="far fa-hand-paper"></i></div>
+            </div>
+            <div id="result">
+                <p>You Win!</p>
+            </div>
+            <div id="com">
+                <div id="ComObject"><i class="far fa-hand-rock"></i></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
